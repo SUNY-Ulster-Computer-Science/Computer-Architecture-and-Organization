@@ -12,6 +12,7 @@ table:
 endTbl:
     .word 0
 
+
 .text
 
 # initialize table addresses in registers

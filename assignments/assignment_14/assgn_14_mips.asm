@@ -1,6 +1,7 @@
 # Assignment 14 assembled MIPS test program
 
 .data
+
 s1:     .asciiz "ABCDEFGH"          # First string
 s2:     .asciiz "IJKLMNOPQRST"      # Second string
 s0:     .space 50                   # Buffer for concatenated string (allocate enough space)

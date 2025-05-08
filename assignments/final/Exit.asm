@@ -1,12 +1,12 @@
 # Command Table Definition and use example
 
 .data
+
 msg:    .asciiz "Exit cmd invoked\n"
 
 
-.globl Exit
-
 .text
+.globl Exit
 
 Exit:
     li      $v0, 4      # service 4 is print null terminated string

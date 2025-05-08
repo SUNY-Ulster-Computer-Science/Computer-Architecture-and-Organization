@@ -2,6 +2,7 @@
 # Helloworld test program
 
 .data
+
 msg:    .asciiz "Hello CSC250 class"
 
 .text

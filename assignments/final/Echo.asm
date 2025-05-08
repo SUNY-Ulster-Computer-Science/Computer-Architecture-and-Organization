@@ -1,12 +1,12 @@
 # Command Table Definition and use example
 
 .data
+
 msg:    .asciiz "Echo cmd invoked\n"
 
 
-.globl Echo
-
 .text
+.globl Echo
 
 Echo:
     li      $v0, 4      # service 4 is print null terminated string
