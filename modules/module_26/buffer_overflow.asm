@@ -15,13 +15,14 @@
 
 .data
 
-pwdMsg: .asciiz "Enter your password: "
-incorrectMsg: .asciiz "Incorrect password!\n"
-correctMsg: .asciiz "Correct password!\n"
+pwdMsg:         .asciiz "Enter your password: "
+incorrectMsg:   .asciiz "Incorrect password!\n"
+correctMsg:     .asciiz "Correct password!\n"
 
 # Note the spatial relationship between the buffer and the password.
-userInput: .space 12
-password: .asciiz "1234"
+userInput:      .space 12
+password:       .asciiz "1234"
+
 
 .text
 

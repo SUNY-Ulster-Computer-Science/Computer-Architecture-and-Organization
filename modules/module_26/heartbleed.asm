@@ -20,13 +20,13 @@
 
 .data
 
-newLine: .asciiz "\n"
-heartbeatPrompt: .asciiz "Enter phrase used to confirm heartbeat: "
+newLine:            .asciiz "\n"
+heartbeatPrompt:    .asciiz "Enter phrase used to confirm heartbeat: "
 heartbeatLenPrompt: .asciiz "Enter length of heartbeat phrase: "
 
 # Memory space for user-submitted data
-heartbeatLen: .word 0  # User specified length
-heartbeat: .space 16   # User specified heartbeat phrase
+heartbeatLen:       .word 0     # User specified length
+heartbeat:          .space 16   # User specified heartbeat phrase
 
 # Memory statically set for demonstration purposes.
 # In reality, this would be a snapshot of memory at the time of attack.
