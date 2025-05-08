@@ -1,4 +1,4 @@
-// Module 25 Compiled Instruction sets Demo
+// Module 25 compiled instruction sets Demo
 
 #include <stdio.h>
 
