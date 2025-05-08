@@ -1,4 +1,4 @@
-// Asgn Module 26 test program
+// Assignment 14 test program
 
 #include <stdio.h>
 #include <string.h>

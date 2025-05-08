@@ -1,3 +1,5 @@
+# Assignment 14 assembled MIPS test program
+
 .data
 s1:     .asciiz "ABCDEFGH"     # First string
 s2:     .asciiz "IJKLMNOPQRST" # Second string
