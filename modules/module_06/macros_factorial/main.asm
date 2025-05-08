@@ -1,3 +1,4 @@
+# Module 06 Macro Factorial Demo
 # Example of simple non-leaf procedure call in section 2.8
 #
 # Pseudo code for program
@@ -7,7 +8,6 @@
 #	}
 # 	Argument n in $a0
 # 	Result in $v0
-#
 
 .include "sysmacros.asm"
 .globl main

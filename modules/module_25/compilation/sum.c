@@ -1,4 +1,5 @@
-// Demo 25 test program for compiler
+// Module 25 Compiled Instruction sets Demo
+
 #include <stdio.h>
 
 int main() {

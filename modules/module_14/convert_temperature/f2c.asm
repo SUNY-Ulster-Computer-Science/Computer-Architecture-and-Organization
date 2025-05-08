@@ -1,4 +1,4 @@
-# FP Example Module 14
+# Module 14 convert temperature demo
 # To convert Fahrenheit to celsius, the formula used is °C = 5/9(°F – 32)
 # Input farenheight is in $f12
 # Return value is in $f0

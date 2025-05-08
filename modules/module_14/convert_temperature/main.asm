@@ -1,4 +1,4 @@
-# Demo Module 14
+# Module 14 convert temperature demo
 # Convert Farenheit to Centigrade
 # Farenheit in $F12
 # Result in $F0

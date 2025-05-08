@@ -1,3 +1,4 @@
+# Module 26 buffer overflow demo
 # A Simple demonstration of a buffer overflow exploit in MIPS
 #
 # In memory, a user input buffer is stored immediatley before
