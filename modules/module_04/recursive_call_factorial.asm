@@ -2,14 +2,16 @@
 # Example of Recursive Call, Factorial
 #
 # Pseudo code for program
-#    int fact (int n) {
+#   int fact (int n) {
 #       if (n < 1) return f;
 #       else return n * fact(n - 1);
-#    }
-#     Argument n in $a0
-#     Result in $v0
+#   }
 #
-#    f = fact(g)
+#   int f = fact(g);
+#
+# Argument n in $a0
+# Result in $v0
+#
 
 .data
 
@@ -45,6 +47,7 @@ fact:
     addi    $v0, $zero, 1           # Store 1 in $v0 to return
     addi    $sp, $sp, 8             # Pop 2 items from stack, nothing is modified, so nothing is restored
     jr      $ra                     # Return to caller (originall call or recursive ancestor)
+
 recurse:
     addi    $a0, $a0, -1            # Else decrement n
     jal     fact                    # Recursive call to fact(n - 1)

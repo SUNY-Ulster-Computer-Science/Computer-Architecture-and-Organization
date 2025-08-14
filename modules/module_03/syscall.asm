@@ -1,9 +1,9 @@
 # Module 03 Demo D
 # Program to demonstrate SYSCALL
 #
-#   Pseudo code for program
-#       i = input("Enter an Integer: ")
-#       print("All your integer are belong to us: ", i)
+# Pseudo code for program
+#   int i = input("Enter an Integer: ");
+#   print("All your integer are belong to us: ", i);
 #
 
 .data

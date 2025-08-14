@@ -1,18 +1,20 @@
 # Module 03 Demo C
 # Program to demonstrate while statement logic in machine language
-#   Pseudo code for program
-#       i = 0;
-#       while (save[i] == k)
-#           i += 1;
 #
-#   i is in $s3, k in $s5, base address of save, save[0], in $s6
+# Pseudo code for program
+#   int i = 0;
+#   int k = 3;
+#   while (save[i] == k)
+#       i += 1;
+#
+# i is in $s3, k in $s5, base address of save, save[0], in $s6
 #
 
 .data
 
 save:   .word 3, 3, 4, 5, 6, 7, 8, 9    # Allocate/initialize a vector array of numbers, save = [3, 3, 4, ...]
-i:      .word 0
-k:      .word 3
+i:      .word 0                         # The counter, initalized to 0
+k:      .word 3                         # The bound, initalized to 3
 
 .text
 

@@ -1,17 +1,16 @@
 # Module 04 Demo A
-# Example of simple procedure call in section 2.8
+# Example of simple procedure call
 #
 # Pseudo code for program
-#    int leaf_example (int g, int h, int i, int j) {
-#       int f;
-#       f = (g + h) - (i + j);
+#   int leaf_example (int g, int h, int i, int j) {
+#       int f = (g + h) - (i + j);
 #       return f;
-#    }
+#   }
 #
 # Notes on register usage
-#        Arguments g, h, i, j in $a0, $a1, $a2, $a3
-#        f will use $s0 so need to save $s0 on stack
-#        Result in $v0
+#   Arguments g, h, i, j in $a0, $a1, $a2, $a3
+#   f will use $s0 so need to save $s0 on stack
+#   Result in $v0
 #
 
 .data

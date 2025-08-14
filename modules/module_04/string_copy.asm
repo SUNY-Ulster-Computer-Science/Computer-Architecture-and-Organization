@@ -1,23 +1,23 @@
 # Module 04 Demo C
-# String Copy Example in section 2.9
+# String Copy Example
 #
 # Pseudo code for program (note this is slightly different than text for simplicity)
-#    void strcpy (char x[], char y[]) {
-#        int i;
-#        i = 0;
-#        while (y[i] != '\0’) {     // check the last character moved
+#   void strcpy (char x[], char y[]) {
+#        int i = 0;
+#        while (y[i] != '\0') {     // check the last character moved
 #           x[i] = y[i];
 #           i += 1;
 #        }
-#    }
-#        Addresses of x, y in $a1, $a0
-#        i in $s0
+#   }
+#
+# Addresses of x, y in $a1, $a0
+# i in $s0
 
 .data
 
-source:     .asciiz "123456789"     # The string to copy from
+source:     .asciiz "123456789"     # The string to copy from (y)
 .word 0                             # Added to force word boundary
-target:     .space 1024             # The empty space to copy to
+target:     .space 1024             # The empty space to copy to (x)
 
 
 .text

@@ -1,8 +1,9 @@
 # Module 03 Demo A
 # Program to demonstrate operands in memory
 #
-#    Pseudo code for program
-#       A[12] = h + A[8];
+# Pseudo code for program
+#   int h = 6;
+#   A[12] = h + A[8];
 #
 
 .data

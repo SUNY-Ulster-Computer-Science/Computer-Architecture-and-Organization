@@ -1,13 +1,13 @@
 # Module 03 Demo B
 # Program to demonstrate if statement logic in machine language
 #
-#    Pseudo code for program
-#       if (i == j)
-#            f = g + h;
-#        else
-#            f = g - h;
-#        ----------------------------------------------------
-#        f, g, h, i, j are in registers $s0, $s1, $s2, $s3, $s4
+# Pseudo code for program
+#   if (i == j)
+#       f = g + h;
+#   else
+#       f = g - h;
+#
+# f, g, h, i, j are in registers $s0, $s1, $s2, $s3, $s4
 #
 
 
