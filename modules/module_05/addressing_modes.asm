@@ -2,8 +2,11 @@
 # Example of addressing
 #
 # Pseudo code for program
-#    while (save[i] == k)
-#        i+=1;
+#   int i = 0;
+#   int k = 3;
+#   while (save[i] == k)
+#       i += 1;
+#
 # Assume i is in $s3, k is in $s5, and save[] base is in $s6
 #
 

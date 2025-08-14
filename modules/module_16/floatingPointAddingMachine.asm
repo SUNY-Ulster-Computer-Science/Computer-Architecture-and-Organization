@@ -5,7 +5,7 @@
 
 prompt:     .asciiz   "Enter a floating point number or 0 to get the sum"
 outputMsg:  .asciiz   "The sum is "
-fltPtZero:  .float 0        # A constant zero to compare to before exiting
+fltPtZero:  .float 0            # A constant zero to compare to before exiting
 
 
 .text

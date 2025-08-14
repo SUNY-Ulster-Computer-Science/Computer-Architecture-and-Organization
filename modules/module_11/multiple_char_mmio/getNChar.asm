@@ -8,13 +8,13 @@
 .eqv dispOutData 0xFFFF000c     # 0xFFFF000c tx data
 
 # Pseudo code
-#    $t0 = 0
-#    while ($t0 < &a1) {
-#        loop until character is available
-#        move character to buffer address offset by $t0
-#        $t0+=1
-#        }
-#    return
+#   $t0 = 0
+#   while ($t0 < $a1) {
+#       /* loop until character is available,
+#       move character to buffer address offset by $t0 */
+#       $t0 += 1
+#   }
+#   return
 
 # buffer address in $a0
 # number of characters to read in $a1

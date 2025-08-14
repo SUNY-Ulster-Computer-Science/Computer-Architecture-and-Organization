@@ -1,15 +1,15 @@
-# Module 06 Macro Factorial Demo
-# Example of simple non-leaf procedure call in section 2.8
+# Module 06 Factorial Demo
+# Example of simple non-leaf procedure call
 #
 # Pseudo code for program
-#    int fact (int n) {
-#        if (n < 1) return f;
-#        else return n * fact(n - 1);
-#    }
-#     Argument n in $a0
-#     Result in $v0
+#   int fact (int n) {
+#       if (n < 1) return f;
+#       else return n * fact(n - 1);
+#   }
 #
-# The non-leaf procedure
+# Argument n in $a0
+# Result in $v0
+#
 
 .text
 .globl fact                         # Declare label as global to make accessible between files

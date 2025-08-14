@@ -8,14 +8,14 @@
 .eqv dispOutData 0xFFFF000C     # 0xFFFF000c tx data
     
 # Pseudo code
-#    $t2 = 0
-#    while ($t2 < &a1) {
-#        loop all previous output complete
-#        move character from buffer address offset by $t2 to disp out word
-#        $t2+=1
-#        }
-#    loop to be sure last character output before return
-#    return
+#   $t2 = 0
+#   while ($t2 < $a1) {
+#       /* loop all previous output complete
+#       move character from buffer address offset by $t2 to disp out word */
+#       $t2 += 1
+#   }
+#   /* loop to be sure last character output before return */
+#   return
 
 # buffer address in $a0
 # number of characters to output in $a1

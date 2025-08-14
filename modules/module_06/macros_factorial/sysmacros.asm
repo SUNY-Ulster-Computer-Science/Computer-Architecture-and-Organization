@@ -1,15 +1,15 @@
-# Module 06 Macro Factorial Demo
-# Example of simple non-leaf procedure call in section 2.8
+# Module 06 Factorial Demo
+# Example of simple non-leaf procedure call
 #
 # Pseudo code for program
-#    int fact (int n) {
-#        if (n < 1) return f;
-#        else return n * fact(n - 1);
-#    }
-#     Argument n in $a0
-#     Result in $v0
+#   int fact (int n) {
+#       if (n < 1) return f;
+#       else return n * fact(n - 1);
+#   }
 #
-# The system macro file
+# Argument n in $a0
+# Result in $v0
+#
 
 
 .macro InputDialogInt (%promptAddr)     # Declare input macro with one argument
