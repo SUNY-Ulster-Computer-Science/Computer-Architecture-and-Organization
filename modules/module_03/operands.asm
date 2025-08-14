@@ -1,5 +1,5 @@
 # Module 03 Demo A
-# Program to demonstrate operands in memory (a variation of the example in Section 2.3)
+# Program to demonstrate operands in memory
 #
 #    Pseudo code for program
 #       A[12] = h + A[8];
@@ -20,6 +20,5 @@ main:
     add     $t1, $s1, $t0       # Add h + A[8] and store in $t1
     sw      $t1, 48($s0)        # Store from $t1 into A[12], A[12] = h + A[8]
 
-exit:
     li      $v0, 10             # Load exit syscall code into $v0
     syscall                     # Syscall
