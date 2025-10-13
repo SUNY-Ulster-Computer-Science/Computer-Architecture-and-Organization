@@ -2,21 +2,24 @@
 # put character procedure
 # $a0 = byte to transmit
 
+# Memory mapped addresses of device fields.
+.eqv dispOutCtl 0xFFFF0008      # 0xFFFF0008 tx contrl
+.eqv dispOutData 0xFFFF000C     # 0xFFFF000c tx data
+
 .text
 .globl putc
 
 putc:
-    lui     $t0, 0xffff             # Load address of memory mapped I/O words into register
 
 pcloop:
-    lw      $t1, 8($t0)             # Read output ctrl memory address
+    lw      $t1, dispOutCtl         # Read output ctrl memory address
     andi    $t1, $t1, 0x0001        # Extract ready bit
-    beq     $t1, $0, pcloop         # Poll till ready
-    sw      $a0, 12($t0)            # When ready write character to output register.
+    beq     $t1, $zero, pcloop      # Poll till ready
+    sw      $a0, dispOutData        # When ready write character to output register.
 
 # Not done yet, need to wait until the character is actually written out
 ccloop:
-    lw      $t1, 8($t0)             # Read output control memory address
+    lw      $t1, dispOutCtl         # Read output control memory address
     andi    $t1, $t1, 0x0001        # Extract ready bit
-    beq     $t1, $0, ccloop         # Keep polling until character written out
+    beq     $t1, $zero, ccloop      # Keep polling until character written out
     jr      $ra                     # Return to caller
