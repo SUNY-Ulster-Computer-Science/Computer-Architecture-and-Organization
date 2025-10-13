@@ -29,7 +29,7 @@ loop:
     andi    $t3, $t3, 0x0001    # Extract ready bit
     beq     $t3, $0, loop       # Keep polling till ready
     
-    lb      $t4, kbInData       # Read character into temporary register from input data word
+    lw      $t4, kbInData       # Read character into temporary register from input data word
     add     $t5, $a0, $t2       # Get store address of character, offset from base buffer address
     sb      $t4, 0($t5)         # Store the byte into the buffer at the offset
     addi    $t2, $t2, 1         # Increment counter
