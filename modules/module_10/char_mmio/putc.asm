@@ -1,6 +1,6 @@
 # Module 10 Memory Mapped I/O Demo
 # put character procedure
-# a0 = byte to transmit
+# $a0 = byte to transmit
 
 .text
 .globl putc
@@ -14,6 +14,7 @@ pcloop:
     beq     $t1, $0, pcloop         # Poll till ready
     sw      $a0, 12($t0)            # When ready write character to output register.
 
+# Not done yet, need to wait until the character is actually written out
 ccloop:
     lw      $t1, 8($t0)             # Read output control memory address
     andi    $t1, $t1, 0x0001        # Extract ready bit
