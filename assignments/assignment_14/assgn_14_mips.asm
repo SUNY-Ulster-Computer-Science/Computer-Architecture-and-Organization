@@ -5,7 +5,7 @@
 s1:     .asciiz "ABCDEFGH"          # First string
 s2:     .asciiz "IJKLMNOPQRST"      # Second string
 s0:     .space 50                   # Buffer for concatenated string (allocate enough space)
-output: .asciiz "The string is: "
+output: .asciiz "The string is: "   # The optput message to show to the user
 
 .text
 .globl main
@@ -42,6 +42,12 @@ main:
     # Exit program
     li      $v0, 10                 # System call code for exit
     syscall
+
+## == NOTE ==##
+# Mips does not have a pre-compiled version of the C standard library like x86 does,
+# therefore it is implemented below.  However, this is not relevant to the assignment
+# and can be ignored.  Only the above can be compared directly to x86 and s390x.
+## ========= ##
 
 # strcat - Concatenate strings
 # Arguments:
